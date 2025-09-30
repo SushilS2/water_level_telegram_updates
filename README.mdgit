@@ -1,1 +1,1 @@
-"# water_level_updates"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/SushilS2/water_level_updates.gitgit push -u origin main
+"# water_level_update"  initgit add README.mdgit commit -m "first commit"git branch -M maingit remote add origin https://github.com/SushilS2/water_level_update.gitgit push -u origin main

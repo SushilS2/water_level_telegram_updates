@@ -24,7 +24,7 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 
-TOKEN = '8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4'
+#TOKEN = '8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4'
 CHAT_ID = '-4836215106'
 API_KEY = ''
 

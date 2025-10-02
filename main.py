@@ -24,7 +24,7 @@ except KeyError:
     #logger.info("Token not available!")
     #raise
 
-#TOKEN = '8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4'
+TOKEN = os.environ["TOKEN"] #'8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4'
 CHAT_ID = '-4836215106'
 API_KEY = ''
 
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             last_refreshed  = data["Meta Data"]["3. Last Refreshed"]
             message = data["Time Series (5min)"][last_refreshed]["1. open"]#'Current Domestic water level - 18 %\nCurrent Flush water level - 13 %\n'
             logger.info(f'Weather in Berlin: {message}')
-            url = f"https://api.telegram.org/bot{SOME_SECRET}/sendMessage?chat_id={CHAT_ID}&text={message}"
+            url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
             requests.post(url)
             #time.sleep(3600)
 

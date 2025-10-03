@@ -35,3 +35,7 @@ flush: 64.85%
 2025-10-03 08:20:45,986 - __main__ - INFO - Currect water level of OHT : Currect water level of OHT:
 Domestic: 40.7%
 flush: 64.7%
+2025-10-03 10:16:40,232 - __main__ - INFO - Token value: 12345
+2025-10-03 10:16:41,375 - __main__ - INFO - Currect water level of OHT : Currect water level of OHT:
+Domestic: 72.3%
+flush: 87.64%

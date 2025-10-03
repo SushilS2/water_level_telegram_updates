@@ -53,8 +53,8 @@ if __name__ == "__main__":
                                     f"{tank['name']}: {tank['current_water_level']['water_level_in_percentage']}%"
                                     for tank in data
                                 )
-            message = f"Currect water level of OHT:\n{message}"
-            logger.info(f'Currect water level of OHT : {message}')
+            message = f"Current water level of OHT:\n{message}"
+            logger.info(f'Current water level of OHT : {message}')
             url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
             requests.post(url)
             #time.sleep(3600)

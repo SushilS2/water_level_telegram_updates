@@ -55,3 +55,7 @@ flush: 84.59%
 2025-10-03 14:15:30,335 - __main__ - INFO - Current water level of OHT : Current water level of OHT:
 Domestic: 80.75%
 flush: 80.75%
+2025-10-03 16:19:30,741 - __main__ - INFO - Token value: 12345
+2025-10-03 16:19:31,907 - __main__ - INFO - Current water level of OHT : Current water level of OHT:
+Domestic: 76.33%
+flush: 76.71%

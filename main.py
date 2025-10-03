@@ -25,7 +25,7 @@ except KeyError:
     #raise
 
 TOKEN = os.environ["TOKEN"] #'8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4'
-CHAT_ID = '-4836215106'
+CHAT_ID = '-1003034311751'
 API_KEY = ''
 
 # Define the API endpoint URL

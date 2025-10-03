@@ -21,22 +21,19 @@ try:
     SOME_SECRET = os.environ["SOME_SECRET"]
 except KeyError:
     SOME_SECRET = "Token not available!"
-    #logger.info("Token not available!")
-    #raise
-
-TOKEN = os.environ["TOKEN"] #'8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4'
+    
+TOKEN = os.environ["TOKEN"] 
 CHAT_ID = '-1003034311751'
-API_KEY = ''
 
 # Define the API endpoint URL
 waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API
 
 headers = {
-    "Authorization": "TOKEN dd5d65cb5c9d74403448d696560c6330b8b8ec68"
+    "Authorization": f"{SOME_SECRET}" 
 }
 
 if __name__ == "__main__":
-    logger.info(f"Token value: {SOME_SECRET}")
+    logger.info(f"Starting script")
     try:
         #while True:
         # Send a GET request to the API
@@ -54,16 +51,19 @@ if __name__ == "__main__":
                                     for tank in data
                                 )
             message = f"Current water level of OHT:\n{message}"
-            logger.info(f'Current water level of OHT : {message}')
+
+            logger.info(f"Message sent to telegram: {message}")
+
             url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
             requests.post(url)
-            #time.sleep(3600)
+            
+            logger.info(f"ending script")
 
     except requests.exceptions.HTTPError as http_err:
-        print(f"HTTP error occurred: {http_err}")
+        logger.info(f"HTTP error occurred: {http_err}")
     except requests.exceptions.ConnectionError as conn_err:
-        print(f"Connection error occurred: {conn_err}")
+        logger.info(f"Connection error occurred: {conn_err}")
     except requests.exceptions.Timeout as timeout_err:
-        print(f"Timeout error occurred: {timeout_err}")
+        logger.info(f"Timeout error occurred: {timeout_err}")
     except requests.exceptions.RequestException as req_err:
-        print(f"An unexpected error occurred: {req_err}")
+        logger.info(f"An unexpected error occurred: {req_err}")

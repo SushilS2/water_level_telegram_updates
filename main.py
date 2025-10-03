@@ -29,14 +29,18 @@ CHAT_ID = '-4836215106'
 API_KEY = ''
 
 # Define the API endpoint URL
-waltr_api_url = "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&outputsize=full&apikey=demo"  # Example public API
+waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API
+
+headers = {
+    "Authorization": "TOKEN dd5d65cb5c9d74403448d696560c6330b8b8ec68"
+}
 
 if __name__ == "__main__":
     logger.info(f"Token value: {SOME_SECRET}")
     try:
         #while True:
         # Send a GET request to the API
-        response = requests.get(waltr_api_url)
+        response = requests.get(waltr_api_url, headers=headers)
 
         if response.status_code == 200:
                             
@@ -45,9 +49,10 @@ if __name__ == "__main__":
 
             # If the request was successful, parse the JSON response
             data = response.json()
-            last_refreshed  = data["Meta Data"]["3. Last Refreshed"]
-            message = data["Time Series (5min)"][last_refreshed]["1. open"]#'Current Domestic water level - 18 %\nCurrent Flush water level - 13 %\n'
-            logger.info(f'Weather in Berlin: {message}')
+            domestic  = data["name"]["Domestic"]["current_water_level"]["water_level_in_percentage"]
+            flush  = data["name"]["flush"]["current_water_level"]["water_level_in_percentage"]
+            message = f"Domestic: {domestic}%, Flush: {flush}%"
+            logger.info(f'Currect Water level: {message}')
             url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
             requests.post(url)
             #time.sleep(3600)

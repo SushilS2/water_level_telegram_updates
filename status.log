@@ -16,3 +16,18 @@
 2025-10-03 04:18:34,827 - __main__ - INFO - Weather in Berlin: 286.8300
 2025-10-03 06:23:45,295 - __main__ - INFO - Token value: 12345
 2025-10-03 06:23:45,479 - __main__ - INFO - Weather in Berlin: 286.8300
+2025-10-03 09:01:49,149 - __main__ - INFO - Token value: Token not available!
+2025-10-03 09:06:30,106 - __main__ - INFO - Token value: Token not available!
+2025-10-03 09:06:30,708 - __main__ - INFO - Currect water level of OHT : Currect water level of OHT
+: {'Domestic': 41.43, 'flush': 64.96}
+2025-10-03 09:09:15,575 - __main__ - INFO - Token value: Token not available!
+2025-10-03 09:09:16,099 - __main__ - INFO - Currect water level of OHT : Domestic: 41.22%Currect water level of OHT
+flush: 64.85%
+2025-10-03 09:12:28,144 - __main__ - INFO - Token value: Token not available!
+2025-10-03 09:12:28,732 - __main__ - INFO - Currect water level of OHT : Currect water level of OHT
+: Domestic: 41.04%
+flush: 64.85%
+2025-10-03 09:13:18,063 - __main__ - INFO - Token value: Token not available!
+2025-10-03 09:13:18,608 - __main__ - INFO - Currect water level of OHT : Currect water level of OHT:
+ Domestic: 41.04%
+flush: 64.85%

@@ -49,10 +49,12 @@ if __name__ == "__main__":
 
             # If the request was successful, parse the JSON response
             data = response.json()
-            domestic  = data["name"]["Domestic"]["current_water_level"]["water_level_in_percentage"]
-            flush  = data["name"]["flush"]["current_water_level"]["water_level_in_percentage"]
-            message = f"Domestic: {domestic}%, Flush: {flush}%"
-            logger.info(f'Currect Water level: {message}')
+            message  = "\n".join(
+                                    f"{tank['name']}: {tank['current_water_level']['water_level_in_percentage']}%"
+                                    for tank in data
+                                )
+            message = f"Currect water level of OHT:\n{message}"
+            logger.info(f'Currect water level of OHT : {message}')
             url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
             requests.post(url)
             #time.sleep(3600)

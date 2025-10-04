@@ -29,7 +29,7 @@ CHAT_ID = '-1003034311751'
 waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API
 
 headers = {
-    "Authorization": f"{SOME_SECRET}" 
+    "Authorization": f"TOKEN {SOME_SECRET}" 
 }
 
 if __name__ == "__main__":

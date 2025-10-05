@@ -223,3 +223,8 @@ flush: 69.05%
 Domestic: 63.93%
 flush: 65.84%
 2025-10-05 11:16:07,262 - __main__ - INFO - ending script
+2025-10-05 12:40:46,750 - __main__ - INFO - Starting script
+2025-10-05 12:40:47,816 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 60.07%
+flush: 58.69%
+2025-10-05 12:40:48,593 - __main__ - INFO - ending script

@@ -50,7 +50,37 @@ if __name__ == "__main__":
                                     f"{tank['name']}: {tank['current_water_level']['water_level_in_percentage']}%"
                                     for tank in data
                                 )
-            message = f"Current water level of OHT:\n{message}"
+            water_level_percent_domastic = data[0]['current_water_level']['water_level_in_percentage']
+            water_level_percent_flush = data[1]['current_water_level']['water_level_in_percentage']
+
+            if (water_level_percent_domastic < 20):                
+                message = f"""
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at {water_level_percent_domastic:.1f}%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+{message}
+
+Thank you.
+- Aspen Committee
+"""
+            elif (water_level_percent_flush < 20):
+                message = f"""
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at {water_level_percent_domastic:.1f}%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+{message}
+
+Thank you.
+- Aspen Committee
+"""
+            else:
+                message = f"Current water level of OHT:\n{message}"
 
             logger.info(f"Message sent to telegram: {message}")
 

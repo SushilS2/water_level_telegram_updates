@@ -17,27 +17,44 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 logger_file_handler.setFormatter(formatter)
 logger.addHandler(logger_file_handler)
 
-try:
-    SOME_SECRET = os.environ["SOME_SECRET"]
-except KeyError:
-    SOME_SECRET = "Token not available!"
-    
-TOKEN = os.environ["TOKEN"] 
-CHAT_ID = '-1003034311751'
+TOKEN_WALTR = os.environ["TOKEN_WALTER"] 
+TOKEN_TEL = os.environ["TOKEN_TEL"] 
+TOKEN_NBS = os.environ["TOKEN_NBS"]
+CHAT_ID = '5167371789' #'-1003034311751'
 
 # Define the API endpoint URL
 waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API
 
-headers = {
-    "Authorization": f"TOKEN {SOME_SECRET}" 
+headers_waltr = {
+    "Authorization": f"TOKEN {TOKEN_WALTR}" 
+}
+
+nbsense_api_url = "https://api.nbsense.in/water_ms/get_latest_data?meter_id=351"  # Example public API
+
+headers_nbs = {
+    "Authorization": f"Bearer {TOKEN_NBS}" 
 }
 
 if __name__ == "__main__":
     logger.info(f"Starting script")
     try:
-        #while True:
+        response_nbs = requests.get(nbsense_api_url, headers=headers_nbs)
+
+        if response_nbs.status_code == 200:
+            
+            # Check for HTTP errors (e.g., 404 Not Found, 500 Internal Server Error)
+            response_nbs.raise_for_status()
+
+            # If the request was successful, parse the JSON response
+            data_nbs = response_nbs.json()
+            water_level_percent_nbs = float(data_nbs['today_flow'])
+            water_level_percent_nbs =f"{(water_level_percent_nbs / 3) * 2:.2f}"
+            logger.info(f"UGT Water Level: {water_level_percent_nbs} Kl")
+            
+            message_nbs = f"UGT Water Level:\n{water_level_percent_nbs} KL\n\n"
+
         # Send a GET request to the API
-        response = requests.get(waltr_api_url, headers=headers)
+        response = requests.get(waltr_api_url, headers=headers_waltr)
 
         if response.status_code == 200:
                             
@@ -84,7 +101,7 @@ Thank you.
 
             logger.info(f"Message sent to telegram: {message}")
 
-            url = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text={message}"
+            url = f"https://api.telegram.org/bot{TOKEN_TEL}/sendMessage?chat_id={CHAT_ID}&text={message_nbs + message}"
             requests.post(url)
             
             logger.info(f"ending script")

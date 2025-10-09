@@ -20,7 +20,7 @@ logger.addHandler(logger_file_handler)
 TOKEN_WALTR = os.environ["TOKEN_WALTER"] 
 TOKEN_TEL = os.environ["TOKEN_TEL"] 
 TOKEN_NBS = os.environ["TOKEN_NBS"]
-CHAT_ID = '5167371789' #'-1003034311751'
+CHAT_ID = '-1003034311751' #'5167371789' 
 
 # Define the API endpoint URL
 waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API

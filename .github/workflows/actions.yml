@@ -26,8 +26,9 @@ jobs:
           
       - name: execute py script # run main.py
         env:
-          SOME_SECRET: ${{ secrets.SOME_SECRET }}
-          TOKEN: ${{ secrets.TOKEN }}
+          TOKEN_WALTR: ${{ secrets.TOKEN_WALTR }}
+          TOKEN_TEL: ${{ secrets.TOKEN_TEL }}
+          TOKEN_NBS: ${{ secrets.TOKEN_NBS }}
         run: python main.py
           
       - name: commit files

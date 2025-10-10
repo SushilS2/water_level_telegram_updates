@@ -52,6 +52,9 @@ if __name__ == "__main__":
             logger.info(f"UGT Water Level: {water_level_percent_nbs} Kl")
             
             message_nbs = f"UGT Water Level:\n{water_level_percent_nbs} KL\n\n"
+        else:
+            message_nbs = f"UGT Water Level:\n***KL\n\n"
+            logger.info(f"Failed to fetch data from NBSense API. Status code: {response_nbs.status_code}")
 
         # Send a GET request to the API
         response = requests.get(waltr_api_url, headers=headers_waltr)
@@ -105,6 +108,8 @@ Thank you.
             requests.post(url)
             
             logger.info(f"ending script")
+        else:
+            logger.info(f"Failed to fetch data from Waltr API. Status code: {response.status_code}")
 
     except requests.exceptions.HTTPError as http_err:
         logger.info(f"HTTP error occurred: {http_err}")

@@ -17,7 +17,7 @@ formatter = logging.Formatter("%(asctime)s - %(name)s - %(levelname)s - %(messag
 logger_file_handler.setFormatter(formatter)
 logger.addHandler(logger_file_handler)
 
-TOKEN_WALTR = os.environ["TOKEN_WALTER"] 
+TOKEN_WALTR = os.environ["TOKEN_WALTR"] 
 TOKEN_TEL = os.environ["TOKEN_TEL"] 
 TOKEN_NBS = os.environ["TOKEN_NBS"]
 CHAT_ID = '-1003034311751' #'5167371789' 

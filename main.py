@@ -48,7 +48,7 @@ if __name__ == "__main__":
             # If the request was successful, parse the JSON response
             data_nbs = response_nbs.json()
             water_level_percent_nbs = float(data_nbs['today_flow'])
-            water_level_percent_nbs =f"{(water_level_percent_nbs / 3) * 2:.2f}"
+            water_level_percent_nbs =f"{(water_level_percent_nbs / 5) * 2:.2f}"
             logger.info(f"UGT Water Level: {water_level_percent_nbs} Kl")
             
             message_nbs = f"UGT Water Level:\n{water_level_percent_nbs} KL\n\n"

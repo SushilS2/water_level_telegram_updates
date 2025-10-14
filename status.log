@@ -1728,3 +1728,9 @@ flush: 42.89%
 Domestic: 36.71%
 flush: 41.29%
 2025-10-14 14:24:08,272 - __main__ - INFO - ending script
+2025-10-14 15:25:41,496 - __main__ - INFO - Starting script
+2025-10-14 15:25:42,600 - __main__ - INFO - UGT Water Level: 46.98 Kl
+2025-10-14 15:25:43,705 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 36.75%
+flush: 41.29%
+2025-10-14 15:25:44,423 - __main__ - INFO - ending script

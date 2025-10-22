@@ -20,7 +20,7 @@ logger.addHandler(logger_file_handler)
 TOKEN_WALTR = os.environ["TOKEN_WALTR"] 
 TOKEN_TEL = os.environ["TOKEN_TEL"] 
 TOKEN_NBS = os.environ["TOKEN_NBS"]
-CHAT_ID = '-1003034311751' #'5167371789' 
+CHAT_ID =  '-1003034311751'#'5167371789' 
 
 # Define the API endpoint URL
 waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API
@@ -48,7 +48,7 @@ if __name__ == "__main__":
             # If the request was successful, parse the JSON response
             data_nbs = response_nbs.json()
             water_level_percent_nbs = float(data_nbs['today_flow'])
-            water_level_percent_nbs =f"{(water_level_percent_nbs / 5) * 2:.2f}"
+            water_level_percent_nbs =round((water_level_percent_nbs / 5) * 2,0)
             logger.info(f"UGT Water Level: {water_level_percent_nbs} Kl")
             
             message_nbs = f"UGT Water Level:\n{water_level_percent_nbs} KL\n\n"
@@ -67,11 +67,11 @@ if __name__ == "__main__":
             # If the request was successful, parse the JSON response
             data = response.json()
             message  = "\n".join(
-                                    f"{tank['name']}: {tank['current_water_level']['water_level_in_percentage']}%"
+                                    f"{tank['name']}: {round(tank['current_water_level']['water_level_in_percentage'])}%"
                                     for tank in data
                                 )
-            water_level_percent_domastic = data[0]['current_water_level']['water_level_in_percentage']
-            water_level_percent_flush = data[1]['current_water_level']['water_level_in_percentage']
+            water_level_percent_domastic = round(data[0]['current_water_level']['water_level_in_percentage'])
+            water_level_percent_flush = round(data[1]['current_water_level']['water_level_in_percentage'])
 
             if (water_level_percent_domastic < 20):                
                 message = f"""

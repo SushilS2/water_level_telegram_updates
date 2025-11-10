@@ -8846,3 +8846,19 @@ Thank you.
 - Aspen Committee
 
 2025-11-10 21:21:36,541 - __main__ - INFO - ending script
+2025-11-10 22:23:20,485 - __main__ - INFO - Starting script
+2025-11-10 22:23:21,739 - __main__ - INFO - Failed to fetch data from NBSense API. Status code: 401
+2025-11-10 22:23:22,853 - __main__ - INFO - Message sent to telegram: 
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at 28.0%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+Domestic: 28%
+flush: 14%
+
+Thank you.
+- Aspen Committee
+
+2025-11-10 22:23:23,629 - __main__ - INFO - ending script

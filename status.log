@@ -11214,3 +11214,19 @@ Thank you.
 - Aspen Committee
 
 2025-11-21 22:23:18,666 - __main__ - INFO - ending script
+2025-11-21 23:21:20,102 - __main__ - INFO - Starting script
+2025-11-21 23:21:21,104 - __main__ - INFO - UGT Water Level: 0.0 Kl
+2025-11-21 23:21:22,070 - __main__ - INFO - Message sent to telegram: 
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at 4.0%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+Domestic: 4%
+flush: 26%
+
+Thank you.
+- Aspen Committee
+
+2025-11-21 23:21:22,664 - __main__ - INFO - ending script

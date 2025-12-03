@@ -14010,3 +14010,9 @@ Thank you.
 - Aspen Committee
 
 2025-12-03 05:23:59,436 - __main__ - INFO - ending script
+2025-12-03 06:37:47,775 - __main__ - INFO - Starting script
+2025-12-03 06:37:48,777 - __main__ - INFO - UGT Water Level: 40.0 Kl
+2025-12-03 06:37:49,782 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 21%
+flush: 33%
+2025-12-03 06:37:50,525 - __main__ - INFO - ending script

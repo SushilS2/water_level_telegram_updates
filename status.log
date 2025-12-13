@@ -17130,3 +17130,19 @@ flush: 33%
 Domestic: 21%
 flush: 30%
 2025-12-13 15:23:11,436 - __main__ - INFO - ending script
+2025-12-13 16:28:51,003 - __main__ - INFO - Starting script
+2025-12-13 16:28:52,178 - __main__ - INFO - UGT Water Level: 93.0 Kl
+2025-12-13 16:28:53,308 - __main__ - INFO - Message sent to telegram: 
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at 17.0%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+Domestic: 17%
+flush: 28%
+
+Thank you.
+- Aspen Committee
+
+2025-12-13 16:28:53,920 - __main__ - INFO - ending script

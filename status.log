@@ -17942,3 +17942,19 @@ flush: 27%
 Domestic: 21%
 flush: 24%
 2025-12-16 13:41:20,527 - __main__ - INFO - ending script
+2025-12-16 14:28:44,203 - __main__ - INFO - Starting script
+2025-12-16 14:28:45,290 - __main__ - INFO - Failed to fetch data from NBSense API. Status code: 401
+2025-12-16 14:28:46,384 - __main__ - INFO - Message sent to telegram: 
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at 19.0%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+Domestic: 19%
+flush: 23%
+
+Thank you.
+- Aspen Committee
+
+2025-12-16 14:28:47,175 - __main__ - INFO - ending script

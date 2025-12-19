@@ -18702,3 +18702,9 @@ Thank you.
 - Aspen Committee
 
 2025-12-19 13:35:55,147 - __main__ - INFO - ending script
+2025-12-19 14:26:28,452 - __main__ - INFO - Starting script
+2025-12-19 14:26:29,399 - __main__ - INFO - Failed to fetch data from NBSense API. Status code: 401
+2025-12-19 14:26:30,404 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 30%
+flush: 30%
+2025-12-19 14:26:31,198 - __main__ - INFO - ending script

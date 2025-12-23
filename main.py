@@ -20,7 +20,7 @@ logger.addHandler(logger_file_handler)
 TOKEN_WALTR = os.environ["TOKEN_WALTR"] 
 TOKEN_TEL = os.environ["TOKEN_TEL"] 
 TOKEN_NBS = os.environ["TOKEN_NBS"]
-CHAT_ID =  '-1003034311751'#'5167371789' 
+CHAT_ID = '-1003034311751'#'5167371789' 
 
 # Define the API endpoint URL
 waltr_api_url = "https://api.waltr.in/v0/location/2548/tank"  # Example public API
@@ -49,11 +49,15 @@ if __name__ == "__main__":
             data_nbs = response_nbs.json()
             water_level_percent_nbs = float(data_nbs['today_flow'])
             water_level_percent_nbs =round((water_level_percent_nbs / 5) * 2,0)
-            logger.info(f"UGT Water Level: {water_level_percent_nbs} Kl")
-            
-            message_nbs = f"UGT Water Level:\n{water_level_percent_nbs} KL\n\n"
+            water_level_percent_nbs_month = float(data_nbs['monthly_flow'])
+            water_level_percent_nbs_month = round((water_level_percent_nbs_month / 5) * 2,0)
+
+            logger.info(f"UGT Water Flow Today: {water_level_percent_nbs} Kl")
+            logger.info(f"UGT Water Flow Monthly: {water_level_percent_nbs_month} Kl")
+
+            message_nbs = f"UGT Water Flow Today:\n{water_level_percent_nbs} KL\n\nUGT Water Flow This Month:\n{water_level_percent_nbs_month} KL\n\n"
         else:
-            message_nbs = f"UGT Water Level:\n***KL\n\n"
+            message_nbs = f"UGT Water Flow Today:\n***KL\n\n"
             logger.info(f"Failed to fetch data from NBSense API. Status code: {response_nbs.status_code}")
 
         # Send a GET request to the API

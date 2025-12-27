@@ -3,6 +3,17 @@ import logging.handlers
 import requests
 import time
 import os
+import math
+
+def safe_to_float(value):
+    if value == 'N/A':
+        return math.nan # or return 0.0 if you prefer
+    try:
+        return float(value)
+    except ValueError:
+        # Handle other potential errors gracefully
+        logger.info(f"Could not convert '{value}'. Returning NaN.")
+        return math.nan
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -47,9 +58,9 @@ if __name__ == "__main__":
 
             # If the request was successful, parse the JSON response
             data_nbs = response_nbs.json()
-            water_level_percent_nbs = float(data_nbs['today_flow'])
+            water_level_percent_nbs = safe_to_float(data_nbs['today_flow'])
             water_level_percent_nbs =round((water_level_percent_nbs / 5) * 2,0)
-            water_level_percent_nbs_month = float(data_nbs['monthly_flow'])
+            water_level_percent_nbs_month = safe_to_float(data_nbs['monthly_flow'])
             water_level_percent_nbs_month = round((water_level_percent_nbs_month / 5) * 2,0)
 
             logger.info(f"UGT Water Flow Today: {water_level_percent_nbs} Kl")

@@ -20949,3 +20949,10 @@ flush: 48%
 Domestic: 45%
 flush: 46%
 2025-12-30 20:30:13,347 - __main__ - INFO - Connection error occurred: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4/sendMessage?chat_id=-1003034311751&text=UGT%20Water%20Flow%20Today:%0Anan%20KL%0A%0AUGT%20Water%20Flow%20This%20Month:%0A-9791.0%20KL%0A%0ACurrent%20water%20level%20of%20OHT:%0ADomestic:%2045%25%0Aflush:%2046%25 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f3742120190>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+2025-12-30 21:24:09,980 - __main__ - INFO - Starting script
+2025-12-30 21:24:10,987 - __main__ - INFO - UGT Water Flow Today: nan Kl
+2025-12-30 21:24:10,987 - __main__ - INFO - UGT Water Flow Monthly: -9791.0 Kl
+2025-12-30 21:24:12,063 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 45%
+flush: 46%
+2025-12-30 21:26:25,255 - __main__ - INFO - Connection error occurred: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot8278717297:AAH3aRu97RCab9zMF_oXkso_fKzEU9RnUP4/sendMessage?chat_id=-1003034311751&text=UGT%20Water%20Flow%20Today:%0Anan%20KL%0A%0AUGT%20Water%20Flow%20This%20Month:%0A-9791.0%20KL%0A%0ACurrent%20water%20level%20of%20OHT:%0ADomestic:%2045%25%0Aflush:%2046%25 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fa551b20190>: Failed to establish a new connection: [Errno 101] Network is unreachable'))

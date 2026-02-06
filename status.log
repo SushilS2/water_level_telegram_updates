@@ -1167,3 +1167,10 @@ flush: 93%
 Domestic: 54%
 flush: 93%
 2026-02-06 19:42:44,086 - __main__ - INFO - Connection error occurred: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-02-06 20:39:13,841 - __main__ - INFO - Starting script
+2026-02-06 20:39:14,822 - __main__ - INFO - UGT Water Flow Today: 15.0 Kl
+2026-02-06 20:39:14,822 - __main__ - INFO - UGT Water Flow Monthly: 560.0 Kl
+2026-02-06 20:39:15,856 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 54%
+flush: 93%
+2026-02-06 20:39:16,599 - __main__ - INFO - ending script

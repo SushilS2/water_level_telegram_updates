@@ -7455,3 +7455,10 @@ Thank you.
 - Aspen Committee
 
 2026-03-22 08:40:22,983 - __main__ - INFO - ending script
+2026-03-22 09:37:51,492 - __main__ - INFO - Starting script
+2026-03-22 09:37:53,244 - __main__ - INFO - UGT Water Flow Today: 77.0 Kl
+2026-03-22 09:37:53,245 - __main__ - INFO - UGT Water Flow Monthly: 1977.0 Kl
+2026-03-22 09:37:54,104 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 24%
+flush: 61%
+2026-03-22 09:37:54,597 - __main__ - INFO - ending script

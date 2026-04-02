@@ -9243,3 +9243,20 @@ Thank you.
 - Aspen Committee
 
 2026-04-02 16:59:58,743 - __main__ - INFO - ending script
+2026-04-02 17:56:13,510 - __main__ - INFO - Starting script
+2026-04-02 17:56:14,595 - __main__ - INFO - UGT Water Flow Today: 69.0 Kl
+2026-04-02 17:56:14,595 - __main__ - INFO - UGT Water Flow Monthly: 146.0 Kl
+2026-04-02 17:56:15,536 - __main__ - INFO - Message sent to telegram: 
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at 11.0%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+Domestic: 11%
+flush: 47%
+
+Thank you.
+- Aspen Committee
+
+2026-04-02 17:56:16,201 - __main__ - INFO - ending script

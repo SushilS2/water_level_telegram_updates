@@ -11867,3 +11867,20 @@ flush: 24%
 Domestic: 32%
 flush: 20%
 2026-04-23 19:17:57,943 - __main__ - INFO - ending script
+2026-04-23 20:56:52,507 - __main__ - INFO - Starting script
+2026-04-23 20:56:53,490 - __main__ - INFO - UGT Water Flow Today: 0.0 Kl
+2026-04-23 20:56:53,490 - __main__ - INFO - UGT Water Flow Monthly: 1962.0 Kl
+2026-04-23 20:56:54,317 - __main__ - INFO - Message sent to telegram: 
+**CRITICAL WATER ALERT**
+
+The water level in the overhead tank is now at 32.0%.
+
+Please start conserving water immediately. We are taking steps to restore the supply, but your responsible usage is crucial.
+
+Domestic: 32%
+flush: 19%
+
+Thank you.
+- Aspen Committee
+
+2026-04-23 20:56:55,062 - __main__ - INFO - ending script

@@ -14165,3 +14165,10 @@ flush: 43%
 Domestic: 49%
 flush: 41%
 2026-05-14 00:04:45,414 - __main__ - INFO - ending script
+2026-05-14 04:48:57,044 - __main__ - INFO - Starting script
+2026-05-14 04:48:58,194 - __main__ - INFO - UGT Water Flow Today: 45.0 Kl
+2026-05-14 04:48:58,194 - __main__ - INFO - UGT Water Flow Monthly: 1161.0 Kl
+2026-05-14 04:48:59,036 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 46%
+flush: 39%
+2026-05-14 04:48:59,831 - __main__ - INFO - ending script

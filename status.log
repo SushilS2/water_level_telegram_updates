@@ -14622,3 +14622,9 @@ flush: 50%
 Domestic: 34%
 flush: 57%
 2026-05-22 12:24:19,684 - __main__ - INFO - ending script
+2026-05-22 15:50:44,788 - __main__ - INFO - Starting script
+2026-05-22 15:50:46,026 - __main__ - INFO - Failed to fetch data from NBSense API. Status code: 401
+2026-05-22 15:50:46,909 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 24%
+flush: 52%
+2026-05-22 15:50:47,572 - __main__ - INFO - ending script

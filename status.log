@@ -15268,3 +15268,9 @@ flush: 35%
 2026-06-02 18:42:59,621 - __main__ - INFO - ending script
 2026-06-02 21:51:21,616 - __main__ - INFO - Starting script
 2026-06-02 21:58:08,454 - __main__ - INFO - Connection error occurred: HTTPSConnectionPool(host='api.nbsense.in', port=443): Max retries exceeded with url: /water_ms/get_latest_data?meter_id=351 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7ff568cc7a30>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+2026-06-02 23:49:46,837 - __main__ - INFO - Starting script
+2026-06-02 23:49:47,856 - __main__ - INFO - Failed to fetch data from NBSense API. Status code: 401
+2026-06-02 23:49:48,698 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+Domestic: 71%
+flush: 29%
+2026-06-02 23:49:49,416 - __main__ - INFO - ending script

@@ -15274,3 +15274,5 @@ flush: 35%
 Domestic: 71%
 flush: 29%
 2026-06-02 23:49:49,416 - __main__ - INFO - ending script
+2026-06-03 04:42:11,241 - __main__ - INFO - Starting script
+2026-06-03 04:48:54,995 - __main__ - INFO - Connection error occurred: HTTPSConnectionPool(host='api.nbsense.in', port=443): Max retries exceeded with url: /water_ms/get_latest_data?meter_id=351 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f8155c4da30>: Failed to establish a new connection: [Errno 110] Connection timed out'))

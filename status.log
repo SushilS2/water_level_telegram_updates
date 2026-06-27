@@ -16418,3 +16418,10 @@ OH Flush: 42%
 2026-06-27 19:26:33,837 - __main__ - INFO - ending script
 2026-06-27 21:09:08,001 - __main__ - INFO - Starting script
 2026-06-27 21:15:51,629 - __main__ - INFO - Connection error occurred: HTTPSConnectionPool(host='api.nbsense.in', port=443): Max retries exceeded with url: /water_ms/get_latest_data?meter_id=351 (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7f5d5f426a30>: Failed to establish a new connection: [Errno 110] Connection timed out'))
+2026-06-27 23:06:37,015 - __main__ - INFO - Starting script
+2026-06-27 23:06:38,028 - __main__ - INFO - UGT Water Flow Today: 0.0 Kl
+2026-06-27 23:06:38,029 - __main__ - INFO - UGT Water Flow Monthly: 2237.0 Kl
+2026-06-27 23:06:38,868 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+OH Domestic: 58%
+OH Flush: 39%
+2026-06-27 23:06:39,538 - __main__ - INFO - ending script

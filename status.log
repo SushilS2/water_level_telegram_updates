@@ -17102,3 +17102,10 @@ OH Flush: 29%
 OH Domestic: 88%
 OH Flush: 27%
 2026-07-08 00:00:46,401 - __main__ - INFO - ending script
+2026-07-08 04:16:27,398 - __main__ - INFO - Starting script
+2026-07-08 04:16:28,860 - __main__ - INFO - UGT Water Flow Today: 65.0 Kl
+2026-07-08 04:16:28,860 - __main__ - INFO - UGT Water Flow Monthly: 552.0 Kl
+2026-07-08 04:16:29,641 - __main__ - INFO - Message sent to telegram: Current water level of OHT:
+OH Domestic: 88%
+OH Flush: 39%
+2026-07-08 04:16:30,197 - __main__ - INFO - ending script
